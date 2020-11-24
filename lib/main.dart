@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ttsflutterapp/barchart/BarChartSampleFive.dart';
+import 'barchart/BarChartSampleThree.dart';
+import 'barchart/BarChartSampleTwo.dart';
+import 'barchart/BarChartSampleFour.dart';
+import 'barchart/BarChatSampleOne.dart';
+import 'scatterchart/ScatterChartSampleOne.dart';
+import 'scatterchart/ScatterChartSampleTwo.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,16 +34,70 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-       title: Text(widget.title),
+        title: Text(widget.title),
       ),
-      body: Center(child: GridView.builder(gridDelegate: null, itemBuilder: null),
+      body: Center(
+        child: GridView.count(
+          primary: false,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          crossAxisCount: 2,
+          children: [
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ScatterChartSampleOne();
+                  }));
+                },
+                child: ScatterChartSampleOne()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ScatterChartSampleTwo();
+                  }));
+                },
+                child: ScatterChartSampleTwo()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return BarChartSampleOne();
+                  }));
+                },
+                child: BarChartSampleOne()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return BarChartSampleTwo();
+                  }));
+                },
+                child: BarChartSampleTwo()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return BarChartSampleThree();
+                  }));
+                },
+                child: BarChartSampleThree()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return BarChartSampleFour();
+                  }));
+                },
+                child: BarChartSampleFour()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return BarChartSampleFive();
+                  }));
+                },
+                child: BarChartSampleFive()),
+          ],
+        ),
       ),
     );
   }
