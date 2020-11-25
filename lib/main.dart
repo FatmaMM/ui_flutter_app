@@ -1,11 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:ttsflutterapp/barchart/BarChartSampleFive.dart';
-import 'barchart/BarChartSampleThree.dart';
-import 'barchart/BarChartSampleTwo.dart';
-import 'barchart/BarChartSampleFour.dart';
-import 'barchart/BarChatSampleOne.dart';
-import 'scatterchart/ScatterChartSampleOne.dart';
-import 'scatterchart/ScatterChartSampleTwo.dart';
+import 'package:ttsflutterapp/imports.dart';
+
 
 void main() {
   runApp(MyApp());
