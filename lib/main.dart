@@ -1,6 +1,5 @@
 import 'package:ttsflutterapp/imports.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -39,7 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
           primary: false,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
-          crossAxisCount: 2,
+          crossAxisCount: 1,
+          childAspectRatio: 0.9,
           children: [
             GestureDetector(
                 onTap: () {
@@ -90,6 +90,83 @@ class _MyHomePageState extends State<MyHomePage> {
                   }));
                 },
                 child: BarChartSampleFive()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleOne();
+                  }));
+                },
+                child: LineChartSampleOne()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleTwo();
+                  }));
+                },
+                child: LineChartSampleTwo()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleThree();
+                  }));
+                },
+                child: LineChartSampleThree()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleFour();
+                  }));
+                },
+                child: LineChartSampleFour()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleFive();
+                  }));
+                },
+                child: LineChartSampleFive()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleSix();
+                  }));
+                },
+                child: LineChartSampleSix()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleSeven();
+                  }));
+                },
+                child: LineChartSampleSeven()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LineChartSampleEight();
+                  }));
+                },
+                child: LineChartSampleEight()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return PieChartSampleOne();
+                  }));
+                },
+                child: PieChartSampleOne()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return PieChartSampleTwo();
+                  }));
+                },
+                child: PieChartSampleTwo()),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return PieChartSampleThree();
+                  }));
+                },
+                child: PieChartSampleThree()),
           ],
         ),
       ),
