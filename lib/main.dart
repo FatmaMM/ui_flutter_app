@@ -1,5 +1,11 @@
-import 'package:ttsflutterapp/imports.dart';
-
+import 'package:flutter/material.dart';
+import 'barchart/BarChartSampleFive.dart';
+import 'barchart/BarChartSampleFour.dart';
+import 'barchart/BarChartSampleThree.dart';
+import 'barchart/BarChartSampleTwo.dart';
+import 'barchart/BarChatSampleOne.dart';
+import 'scatterchart/ScatterChartSampleOne.dart';
+import 'scatterchart/ScatterChartSampleTwo.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,8 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: GridView.count(
           primary: false,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
+          crossAxisSpacing: 4,
+          mainAxisSpacing: 4,
           crossAxisCount: 2,
           children: [
             GestureDetector(

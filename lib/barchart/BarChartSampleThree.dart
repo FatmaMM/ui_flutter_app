@@ -1,4 +1,6 @@
-import 'package:ttsflutterapp/imports.dart';
+
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 
 class BarChartSampleThree extends StatefulWidget {
   @override

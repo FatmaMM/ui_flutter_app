@@ -1,4 +1,6 @@
-import 'package:ttsflutterapp/imports.dart';
+
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 
 class BarChartSampleTwo extends StatefulWidget {
   @override
@@ -60,19 +62,19 @@ class BarChartSampleTwoState extends State<BarChartSampleTwo> {
               children: <Widget>[
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
+                  mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     makeTransactionsIcon(),
                     const SizedBox(
-                      width: 38,
+                      width: 12,
                     ),
                     const Text(
                       'Transactions',
                       style: TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     const SizedBox(
-                      width: 4,
+                      width: 2,
                     ),
                     const Text(
                       'state',
