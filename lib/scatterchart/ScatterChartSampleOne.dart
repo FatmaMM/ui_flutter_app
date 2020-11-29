@@ -1,4 +1,6 @@
-import 'package:ttsflutterapp/imports.dart';
+import 'dart:math';
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 
 class ScatterChartSampleOne extends StatefulWidget {
   @override
@@ -21,13 +23,6 @@ class ScatterChartSampleOneState extends State<ScatterChartSampleOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:
-//      GestureDetector(
-//        onTap: () {
-          /* setState(() {
-          showFlutter = !showFlutter;
-        });*/
-//      },
-//        child:
           AspectRatio(
         aspectRatio: 1,
         child: Card(
@@ -63,7 +58,6 @@ class ScatterChartSampleOneState extends State<ScatterChartSampleOne> {
           ),
         ),
       ),
-//      ),
     );
   }
 
